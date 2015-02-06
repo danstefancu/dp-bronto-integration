@@ -1,0 +1,2 @@
+<input type="text" name="bronto_token" id="bronto_token" class="regular-text" value="<?php echo get_option( 'bronto_token' ); ?>" />
+<p class="description">Found in <code>Home -> Settings -> Data Exchange</code></p>

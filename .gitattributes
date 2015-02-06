@@ -1,0 +1,23 @@
+# These files are text and should be normalized (convert crlf => lf)
+*.md		text
+
+
+# Images should be treated as binary
+# (binary is a macro for -text -diff)
+*.png		binary
+*.jepg		binary
+
+
+# Keep translation files intact, as binaries
+*.mo		binary
+
+# Ignore these
+*.po		-text
+*.pot		-text
+
+# Don't change EOL on this files
+*.swf		binary
+*.ttf		binary
+*.eot		binary
+*.woff		binary
+
