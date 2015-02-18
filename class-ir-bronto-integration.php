@@ -3,7 +3,7 @@
 Plugin Name: DP Bronto Integration
 Plugin URI: http://dreamproduction.com/wordpress-plugins/dp-bronto-integration
 Description: A drop-and-go solution for syncing WordPress users with Bronto mailing lists. Uses user Groups for Bronto contact list mapping, defaults to first Bronto list created. It was developed for <a href="http://insideretail.com.au">Inside Retail</a> and currently powers all operations. Requires built-in PHP SOAP extension enabled.
-Version: 1.0
+Version: 1.0.0
 Author: Dream Production
 Author URI: http://dreamproduction.com
 License: GPL2
@@ -11,6 +11,9 @@ License: GPL2
 
 /**
  * Class DP_Bronto
+ *
+ * @class    DP_Bronto
+ * @version  1.0.0
  */
 class DP_Bronto {
 
@@ -42,7 +45,7 @@ class DP_Bronto {
 	final public function __construct() {
 
 		// An option in general settings
-		add_action( 'admin_init', array( $this, 'setup_token_options' ), 11 );
+		add_action( 'admin_init', array( $this, 'setup_plugin_options' ), 11 );
 
 		$token = get_option( 'bronto_token', false );
 
@@ -318,7 +321,7 @@ class DP_Bronto {
 	/**
 	 * Register fields for general options page.
 	 */
-	function setup_token_options() {
+	function setup_plugin_options() {
 		add_settings_field( 'bronto_token' , __( 'Bronto API Token', 'dp' ), array( $this, 'display_options' ) , 'general' , 'default' );
 		register_setting( 'general', 'bronto_token' );
 	}

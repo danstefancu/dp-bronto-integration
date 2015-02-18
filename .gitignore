@@ -8,7 +8,6 @@ advanced-cache.php
 humans.txt
 cache
 error_log
-*.md
 *.swp
 *.log
 *.cache
