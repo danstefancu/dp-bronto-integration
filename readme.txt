@@ -20,6 +20,6 @@ A drop-and-go solution for syncing WordPress users with [Bronto](http://bronto.c
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 
 * Initial release

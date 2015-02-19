@@ -1,10 +1,10 @@
 # DP Bronto Integration #
-**Contributors:** de_ce, dreamproduction
-**Tags:** bronto, users, email, groups, newsletter, integration, admin
-**Requires at least:** 3.6
-**Tested up to:** 4.1
-**License:** GPL2 or later
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
+Contributors: de_ce, dreamproduction  
+Tags: bronto, users, email, groups, newsletter, integration, admin  
+Requires at least: 3.6  
+Tested up to: 4.1  
+License: GPL2 or later  
+License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
 A drop-and-go solution for syncing WordPress users with Bronto. Uses user Groups for Bronto contact list mapping, or first Bronto list created.
 
@@ -20,6 +20,6 @@ A drop-and-go solution for syncing WordPress users with [Bronto](http://bronto.c
 
 ## Changelog ##
 
-### 1.0 ###
+### 1.0.0 ###
 
 * Initial release
